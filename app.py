@@ -123,7 +123,7 @@ class FSSTestingApp:
     def browse_support_image(self):
         filename = filedialog.askopenfilename(
             title="Select support image",
-            filetypes=(("Image files", "*.png *.jpg *.jpeg *.bmp"), ("All files", "*.*"))
+            filetypes=(("Image files", "*.jpg *.jpeg "), ("All files", "*.*"))
         )
         if filename:
             self.support_path.delete(0, tk.END)
@@ -132,7 +132,7 @@ class FSSTestingApp:
     def browse_support_mask(self):
         filename = filedialog.askopenfilename(
             title="Select support mask",
-            filetypes=(("Image files", "*.png *.jpg *.jpeg *.bmp"), ("All files", "*.*"))
+            filetypes=(("Image files", "*.png"), ("All files", "*.*"))
         )
         if filename:
             self.mask_path.delete(0, tk.END)
@@ -141,7 +141,7 @@ class FSSTestingApp:
     def browse_query_image(self):
         filename = filedialog.askopenfilename(
             title="Select query image",
-            filetypes=(("Image files", "*.png *.jpg *.jpeg *.bmp"), ("All files", "*.*"))
+            filetypes=(("Image files", "*.jpg *.jpeg"), ("All files", "*.*"))
         )
         if filename:
             self.query_path.delete(0, tk.END)
