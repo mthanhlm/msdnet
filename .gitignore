@@ -4,3 +4,5 @@ initmodel/
 logs/
 initmodel/*
 logs/*
+pascal_20itr.pt
+pretrained
