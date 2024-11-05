@@ -1,5 +1,6 @@
 Datasets/
 vis/
 initmodel/
-logs/initmodel/*
+logs/
+initmodel/*
 logs/*
