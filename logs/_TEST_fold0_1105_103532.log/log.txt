@@ -1,0 +1,19 @@
+
+:=========== Few-shot Semantic Segmentation with CDMDNet ===========
+|             datapath: ../../data              
+|            benchmark: pascal                  
+|              logpath: log_queryformer_r50_5s_coco_fold0
+|                  bsz: 1                       
+|              nworker: 0                       
+|                 load: pretrained/pascal/fold0/pascal_20itr.pt
+|               layers: 50                      
+|           reduce_dim: 64                      
+|                 fold: 0                       
+|                 shot: 1                       
+|            visualize: True                    
+:================================================
+
+Backbone # param.: 23685312
+Learnable # param.: 737186
+Total # param.: 24422498
+# available GPUs: 1

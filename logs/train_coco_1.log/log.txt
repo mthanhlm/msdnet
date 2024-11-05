@@ -1,0 +1,20 @@
+
+:=========== Few-shot Semantic Segmentation with CDMDNet ===========
+|             datapath: Datasets/               
+|            benchmark: coco                    
+|              logpath: train_coco_1            
+|                  bsz: 4                       
+|                   lr: 0.001                   
+|                niter: 20                      
+|              nworker: 4                       
+|               layers: 50                      
+|           reduce_dim: 64                      
+|                 fold: 0                       
+|                 shot: 5                       
+:================================================
+
+Backbone # param.: 23685312
+Learnable # param.: 737186
+Total # param.: 24422498
+# available GPUs: 1
+[Epoch: 00] [Batch: 0001/15510] L: 0.88748  Avg L: 0.88748  mIoU:  0.26  |  FB-IoU: 32.88

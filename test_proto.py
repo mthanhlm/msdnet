@@ -48,12 +48,12 @@ if __name__ == '__main__':
 
     # Arguments parsing
     parser = argparse.ArgumentParser(description='Hypercorrelation Squeeze Pytorch Implementation')
-    parser.add_argument('--datapath', type=str, default='../../data')
+    parser.add_argument('--datapath', type=str, default='Datasets/')
     parser.add_argument('--benchmark', type=str, default='coco', choices=['pascal', 'coco', 'new_coco', 'fss'])
     parser.add_argument('--logpath', type=str, default='log_queryformer_r50_5s_coco_fold0')
     parser.add_argument('--bsz', type=int, default=1)
     parser.add_argument('--nworker', type=int, default=0)
-    parser.add_argument('--load', type=str, default='pretrained/coco/fold0/r50_1shot.pt')
+    parser.add_argument('--load', type=str, default='pretrained/pascal/fold0/pascal_20itr.pt')
     parser.add_argument('--layers', type=int, default=50)
     parser.add_argument('--reduce_dim', type=int, default=64)
     parser.add_argument('--fold', type=int, default=0, choices=[0, 1, 2, 3])

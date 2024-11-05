@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     # Arguments parsing
     parser = argparse.ArgumentParser(description='MSDNet Pytorch Implementation')
-    parser.add_argument('--datapath', type=str, default='../../data')
+    parser.add_argument('--datapath', type=str, default='Datasets/')
     parser.add_argument('--benchmark', type=str, default='coco', choices=['pascal', 'coco', 'fss', 'new_coco'])
     parser.add_argument('--logpath', type=str, default='log_MSDNet_r50_coco0')
     parser.add_argument('--bsz', type=int, default=32)

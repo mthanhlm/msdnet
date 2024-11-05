@@ -1,0 +1,19 @@
+#train:
+python train.py --layers 50 --fold 0 --benchmark pascal --lr 1e-3 --bsz 8 --niter 60 --shot 5 --logpath "test_train_pascal_1"
+
+
+python train.py --layers {50,101} --fold {0,1,2,3} --benchmark coco --lr 1e-3 --bsz 32 --niter 30 --shot {1,5} --logpath "test_train_coco_1"
+
+
+python train.py --layers {50,101} --fold {0,1,2,3} --benchmark new_coco --lr 1e-3 --bsz 32 --niter 10 --shot {1,5} --logpath "test_train_newcoco_1"
+
+
+#test:
+
+python test.py --layers {50,101} --fold {0,1,2,3} --benchmark pascal --nshot {1,5} --load "path_to_trained_model"
+
+python test.py --layers {50,101} --fold {0,1,2,3} --benchmark coco --nshot {1,5} --load "path_to_trained_model"
+
+python test.py --layers {50,101} --fold {0,1,2,3} --benchmark pascal --nshot {1,5} --load "path_to_trained_model_of_new_coco"
+
+python test_proto.py --layers 50 --fold 0 --benchmark pascal --nshot 1
