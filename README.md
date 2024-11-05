@@ -19,7 +19,6 @@ pip install -r requirements.txt
 
 ## Run demo
 
-> ### 1. PASCAL-5<sup>i</sup>
 > ```bash
 > python app.py
 > ```
@@ -36,6 +35,3 @@ If you use this repository in your work, please cite the following paper:
   journal={arXiv preprint arXiv:2409.11316},
   year={2024}
 }
-# msdnet
-# msdnet
-# msdnet
