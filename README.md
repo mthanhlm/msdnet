@@ -11,12 +11,12 @@ For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2409
 
 Conda environment settings:
 ```bash
+git clone https://github.com/mthanhlm/msdnet
 conda create -n msd python=3.8
 conda activate msd
-
 pip install -r requirements.txt
 ```
-
+Download this file: [[Drive](https://drive.google.com/file/d/12f-OC8SCA3mnIwUFDKTcAiriub9TWArq/view?usp=drive_link)] and extract inside folder msdnet
 ## Run demo
 
 > ```bash
