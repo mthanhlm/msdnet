@@ -5,6 +5,5 @@ logs/
 initmodel/*
 logs/*
 pascal_20itr.pt
-pretrained/*
 app.py
 app2_modified.py
