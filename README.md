@@ -15,6 +15,8 @@ git clone https://github.com/mthanhlm/msdnet
 conda create -n msd python=3.8
 conda activate msd
 pip install -r requirements.txt
+pip install Pillow
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
 Download this file: [[Drive](https://drive.google.com/file/d/12f-OC8SCA3mnIwUFDKTcAiriub9TWArq/view?usp=drive_link)] and extract inside folder msdnet
 ## Run demo
