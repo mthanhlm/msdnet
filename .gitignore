@@ -9,3 +9,4 @@ app.py
 app2_modified.py
 pretrained/pascal/fold0
 ultis.zip
+model/__pycache__/*

@@ -12,19 +12,20 @@ For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2409
 Conda environment settings:
 ```bash
 git clone https://github.com/mthanhlm/msdnet
-conda create -n msd python=3.9
+conda create -n msd python=3.10 -y 
 conda activate msd
-pip install -r requirements.txt
-pip install Pillow
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 ```
 Download this file: [[Drive](https://drive.google.com/file/d/12f-OC8SCA3mnIwUFDKTcAiriub9TWArq/view?usp=drive_link)] and extract inside folder msdnet
 ## Run demo
-
+If not actiavate envs before:
+> ```bash
+> conda activate msd
+> ```
+Then: 
 > ```bash
 > python app.py
 > ```
-
  1. Select **pascal_20itr.pt** in model or other pretrained file.
  2. Select *support and mask image* in folder: 
 
