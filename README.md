@@ -12,7 +12,7 @@ For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2409
 Conda environment settings:
 ```bash
 git clone https://github.com/mthanhlm/msdnet
-conda create -n msd python=3.8
+conda create -n msd python=3.9
 conda activate msd
 pip install -r requirements.txt
 pip install Pillow
