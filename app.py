@@ -8,7 +8,7 @@ import numpy as np
 from torchvision import transforms
 import os
 
-class FSSTestingApp:
+class TestingApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Testing Application")
@@ -264,5 +264,5 @@ class FSSTestingApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = FSSTestingApp(root)
+    app = TestingApp(root)
     root.mainloop()
